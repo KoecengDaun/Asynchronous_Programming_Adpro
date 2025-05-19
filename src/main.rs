@@ -77,6 +77,8 @@ fn main() {
         TimerFuture::new(Duration::new(2, 0)).await;
         println!("KoecengDaun - 2306244892: done!");
     });
+    
+    println!("KoecengDaun - 2306244892: hey hey");
 
     drop(spawner);
 
