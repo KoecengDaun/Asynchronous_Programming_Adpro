@@ -77,6 +77,26 @@ fn main() {
         TimerFuture::new(Duration::new(2, 0)).await;
         println!("KoecengDaun - 2306244892: done!");
     });
+
+        spawner.spawn(async {
+        println!("KoecengDaun - 2306244892: howdy1!");
+        TimerFuture::new(Duration::new(2, 0)).await;
+        println!("KoecengDaun - 2306244892: done1!");
+    });
+    
+    // Spawn tugas kedua
+    spawner.spawn(async {
+        println!("KoecengDaun - 2306244892: howdy2!");
+        TimerFuture::new(Duration::new(2, 0)).await;
+        println!("KoecengDaun - 2306244892: done2!");
+    });
+    
+    // Spawn tugas ketiga
+    spawner.spawn(async {
+        println!("KoecengDaun - 2306244892: howdy3!");
+        TimerFuture::new(Duration::new(2, 0)).await;
+        println!("KoecengDaun - 2306244892: done3!");
+    });
     
     println!("KoecengDaun - 2306244892: hey hey");
 
