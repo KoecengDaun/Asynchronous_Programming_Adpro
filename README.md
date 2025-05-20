@@ -1,8 +1,11 @@
-![gambar 1](timer_future/Gambar/image.png)
+![gambar 1](Gambar/image.png)
+
 Penjelasan : "hey hey!" muncul sebelum "howdy!" dan "done!" karena pesan ditambahkan sebelum executor dijalankan. Ini menunjukkan sifat asynchronous dari kode.
 
-![With Drop](<timer_future/Gambar/Screenshot 2025-05-19 163001.png>)
-![No Drop](<timer_future/Gambar/Screenshot 2025-05-19 163132.png>)
+![With Drop](<Gambar/Screenshot 2025-05-19 163001.png>)
+
+![No Drop](<Gambar/Screenshot 2025-05-19 163132.png>)
+
 Penjelasan : 
 
 Saat ada drop setelah beberapa saat process akan selesai secara sendiri, tetapi saat tidak ada drop executor.run() tidak akan berhenti karena masih menunggu tugas baru. 
